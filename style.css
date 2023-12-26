@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1f262d;
+    text-align: center;
+}
+
+#filterOptions {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, input {
+    width: calc(50% - 12px); /* Adjusted width for search bar and category bar */
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block; /* Align input elements horizontally */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#bookList, #borrowingHistory {
+    border-top: 2px solid #007bff;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.book {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book p {
+    margin: 0;
+    color: #333;
+}
+
+.borrowButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.borrowButton:hover {
+    background-color: #218838;
+}
+
+#borrowingHistory {
+    background-color: #414967;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#borrowingHistory h2 {
+    color: #f1f1f1;
+}
+
+.borrowedBooks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.borrowedBooks li {
+    background-color: #ffeeba;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
