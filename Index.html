@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Management System</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Library</h1>
+
+        <div id="filterOptions">
+            <label for="categoryFilter">Filter by Category</label>
+            <select id="categoryFilter" onchange="filterBooks()">
+                <option value="all">All Categories</option>
+                <option value="self-help">Self-Help</option>
+                <option value="adventure">Adventure</option>
+                <option value="love">Love</option>
+                <option value="life">Life</option>
+                <!-- Add more categories as needed -->
+            </select>
+
+            <label for="searchQuery">Search:</label>
+            <input type="text" id="searchQuery" oninput="filterBooks()" placeholder="Enter search query">
+        </div>
+        
+        <div id="bookList">
+            <!-- Display book list here -->
+        </div>
+
+        <div id="borrowingHistory">
+            <h2>Borrowing History</h2>
+            <ul id="borrowedBooks">
+                <!-- Display borrowing history here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
